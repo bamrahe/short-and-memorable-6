@@ -2,7 +2,7 @@ body{
     height: auto;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(to bottom, rgb(2, 83, 15), rgba(210, 205, 175, 0.644));
+    background: linear-gradient(to bottom, rgb(154, 144, 131), rgba(210, 205, 175, 0.644));
     text-align: center;
     color: rgba(67, 67, 67, 0.67);
     /*overflow: hidden;
@@ -13,7 +13,7 @@ body{
     margin:0 auto;
     padding: 50px 20px;
     max-width: 500px;
-    background-color: rgba(237, 210, 168, 0.719;
+    background-color: rgba(237, 210, 168, 0.719);
     text-align: center;
     margin: 30px auto;
     border-radius: 20px;
