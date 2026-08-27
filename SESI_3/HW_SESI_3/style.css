@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family:
+    Arial,
+    Helvetica,
+    Comic sans-serif;
+    background: linear-gradient(to bottom, rgb(3, 0, 138), black);
+    padding-top: 40px;
+}
+
+img {
+    width: 525pt;
+    display: block;
+    margin: 0 auto 5rem;
+    border-radius: 20pt;
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+.container {
+    max-width: 500pt;
+    margin: 0 auto;
+    background: wheat;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container p {
+    color: rgb(99, 36, 36);
+    margin: 0 0 1rem;
+}
+
+.container-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(1, 27, 1);
+}
+
+.container-link img {
+    width: 100px;
+    display: block;
+    margin: 0 auto 5rem;
+    border-radius: 20px;
+    transition: transform 0.2s;
+    }
+
+.container-button button {
+    padding: 12px 24px;
+    font-size: 1.25rem;
+     cursor: pointer;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(1, 27, 1);
+}
+
+.container-button button:hover {
+    background-color: yellow;
+}
+
+h1 {
+    color: rgb(247, 244, 242);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(1, 27, 1);
+}
+
+h4 {
+    color: rgb(1, 27, 1);
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+li {
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #111;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    padding: 10px 20px;
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
+nav li:hover {
+    background-color: Green;
+}
+
+.footer{
+    padding-top: 20px;
+    animation: footer 2s infinite;
+    color:aliceblue;
+    text-align: center;
+}
+
+@keyframes footer{
+    2%, 100%{opacity: 1;}
+    50%{opacity: 0;}
+}
