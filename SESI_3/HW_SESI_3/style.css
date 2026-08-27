@@ -10,7 +10,8 @@ body {
 }
 
 img {
-    width: 525pt;
+    max-width: 75%;
+    height: auto;
     display: block;
     margin: 0 auto 5rem;
     border-radius: 20pt;
@@ -23,7 +24,7 @@ img:hover {
 }
 
 .container {
-    max-width: 500pt;
+    max-width: 75%;
     margin: 0 auto;
     background: wheat;
     padding: 20px;
