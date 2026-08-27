@@ -13,7 +13,7 @@ body{
     margin:0 auto;
     padding: 50px 20px;
     max-width: 500px;
-    background-color: rgba(237, 210, 168, 0.719);
+    background-color: rgba(237, 210, 168, 0.719;
     text-align: center;
     margin: 30px auto;
     border-radius: 20px;
@@ -56,19 +56,19 @@ h1:hover{
     width: 80%;
     margin: 10px auto;
     padding: 12px;
-    background-color: rgba(18, 98, 28, 0.621);
+    background-color: rgba(102, 102, 58, 0.621);
     color: black;
     text-decoration: none;
     border-radius: 15px;
     font-weight: bold;
     font-size: 20px;
-    box-shadow: 2px 4px 6px rgba(128, 215, 91, 0.5);
+    box-shadow: 2px 4px 6px rgba(201, 160, 45, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .links .btn:hover{
     transform: translateY(-5px);
-    box-shadow: 2px 4px 6px rgba(170, 250, 136, 0.5);
+    box-shadow: 2px 4px 6px rgba(201, 160, 45, 0.5);
     color: rgb(255, 255, 255);
 }
 
