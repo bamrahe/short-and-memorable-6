@@ -28,6 +28,7 @@ body {
     Noto Color Emoji;
   min-height: 100vh;
   margin: 0;
+  text-align: center;
   color: var(--ink);
   background:
     radial-gradient(
@@ -106,6 +107,13 @@ h1 {
   line-height: 1.05;
   letter-spacing: -0.03em;
   text-align: center;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--muted-ink);
+  text-align: justify;
 }
 
 main {
@@ -201,4 +209,22 @@ footer p {
   transform: translateY(-5px);
   box-shadow: 2px 4px 6px rgba(15, 23, 42, 0.28);
   color: rgb(255, 255, 255);
+}
+
+.data table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.data th,
+.data td {
+    padding: 9px;
+    text-align: left;
+}
+
+.data table .center {
+    text-align: left;
+    font-size: 20px;
 }
