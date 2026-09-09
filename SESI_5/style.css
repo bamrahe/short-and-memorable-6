@@ -170,6 +170,9 @@ body > footer {
 
 footer p {
   margin: 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--muted-ink);
 }
 
 @media (max-width: 600px) {
@@ -187,6 +190,7 @@ footer p {
     padding: 0.65rem 0.5rem;
   }
 }
+
 .links .btn {
   display: block;
   width: 80%;
