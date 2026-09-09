@@ -1,242 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <style>
-      :root {
-        --glass-surface: rgba(255, 255, 255, 0.16);
-        --glass-border: rgba(255, 255, 255, 0.42);
-        --glass-shadow: 0 24px 60px rgba(15, 23, 42, 0.28);
-        --ink: #f8fafc;
-        --muted-ink: rgba(248, 250, 252, 0.78);
-        --highlight: #fcd34d;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-          Ubuntu, Cantarell, Noto Sans, sans-serif, Apple Color Emoji,
-          Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-        min-height: 100vh;
-        margin: 0;
-        color: var(--ink);
-        background:
-          radial-gradient(
-            circle at 12% 18%,
-            rgba(251, 191, 36, 0.32),
-            transparent 28%
-          ),
-          radial-gradient(
-            circle at 88% 78%,
-            rgba(56, 189, 248, 0.28),
-            transparent 32%
-          ),
-          linear-gradient(135deg, #172554 0%, #0f766e 52%, #164e63 100%);
-      }
-
-      body > header,
-      main,
-      footer {
-        width: min(900px, calc(100% - 2rem));
-        margin-right: auto;
-        margin-left: auto;
-      }
-
-      body > header,
-      main > section,
-      body > footer {
-        border: 1px solid var(--glass-border);
-        background: var(--glass-surface);
-        box-shadow: var(--glass-shadow);
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
-      }
-
-      body > header {
-        margin-top: 2rem;
-        padding: 1.5rem 2rem 1.75rem;
-        border-radius: 24px;
-        color: var(--ink);
-      }
-
-      header nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.65rem;
-        margin-bottom: 1.75rem;
-      }
-
-      header nav a,
-      header nav a:visited {
-        margin: 0;
-        padding: 0.55rem 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 999px;
-        color: var(--ink);
-        background: rgba(255, 255, 255, 0.1);
-        text-decoration: none;
-        transition:
-          background 180ms ease,
-          transform 180ms ease,
-          border-color 180ms ease;
-      }
-
-      header nav a:hover,
-      header nav a:focus-visible {
-        border-color: rgba(255, 255, 255, 0.7);
-        background: rgba(255, 255, 255, 0.24);
-        color: var(--ink);
-        transform: translateY(-2px);
-      }
-
-      h1 {
-        margin: 0;
-        color: var(--ink);
-        font-size: clamp(2rem, 5vw, 3.5rem);
-        line-height: 1.05;
-        letter-spacing: -0.03em;
-        text-align: center;
-      }
-
-      main {
-        padding: 2rem 0;
-      }
-
-      main > section {
-        padding: clamp(1rem, 4vw, 2rem);
-        border-radius: 20px;
-      }
-
-      table {
-        width: 100%;
-        margin: 0;
-        overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.28);
-        border-radius: 14px;
-        background: rgba(255, 255, 255, 0.08);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-      }
-
-      th,
-      td {
-        border-color: rgba(255, 255, 255, 0.2);
-        background-color: rgba(255, 255, 255, 0.035);
-        color: var(--muted-ink);
-      }
-
-      th {
-        color: var(--ink);
-      }
-
-      tbody tr:nth-child(even) th,
-      tbody tr:nth-child(even) td {
-        background-color: rgba(19, 65, 78, 0.295);
-      }
-
-      tr:first-child th {
-        padding-bottom: 1rem;
-        background-color: rgba(255, 255, 255, 0.14);
-        color: var(--highlight);
-        font-size: 1.25rem;
-      }
-
-      body > footer {
-        margin-bottom: 2rem;
-        padding: 0.75rem 1rem;
-        border-radius: 16px;
-        color: var(--muted-ink);
-        text-align: center;
-      }
-
-      footer p {
-        margin: 0;
-      }
-
-      @media (max-width: 600px) {
-        body > header {
-          margin-top: 1rem;
-          padding: 1.25rem;
-        }
-
-        main {
-          padding: 1rem 0;
-        }
-
-        th,
-        td {
-          padding: 0.65rem 0.5rem;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-      </nav>
-      <h1>Abraham Nararya Rahe Jatmiko</h1>
-      <br>
-      <img src="./bam.png" title="abampict" height="300px" class="avatar" style="display: block; margin: 0 auto;" />
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+        <h1>Abraham Nararya Rahe Jatmiko</h1>
+        <br>
     </header>
 
     <main>
-      <section>
-        <table>
-          <tbody>
-            <tr>
-              <th colspan="2" style="text-align: center">Profile</th>
-            </tr>
-            <tr>
-              <th>Name</th>
-              <td>Abraham Nararya Rahe Jatmiko</td>
-            </tr>
-            <tr>
-              <th>Age</th>
-              <td>11</td>
-            </tr>
-            <tr>
-              <th>Job</th>
-              <td>Student</td>
-            </tr>
-            <tr>
-              <th>City</th>
-              <td>Denpasar</td>
-            </tr>
-            <tr>
-              <th>Gender</th>
-              <td>Male</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          Hello! My name is Abraham Nararya Rahe Jatmiko, also called Abam, and
-          I am a Grade 6 student who loves learning and taking on new
-          challenges. I believe that every day is an opportunity to grow,
-          discover new things, and become a better person. My favorite subjects
-          are Mathematics and Science, and I enjoy participating in academic
-          competitions and school activities. Through these experiences, I have
-          learned the importance of hard work, discipline, teamwork, and
-          perseverance. Outside the classroom, I enjoy riding bicycle, coding,
-          and solving puzzles. These activities help me develop creativity,
-          confidence, and problem-solving skills. I am grateful for the support
-          of my family, teachers, and friends, who encourage me to always do my
-          best.
-        </p>
-      </section>
-    </main>
+        <section>
+            <h2>My Portfolio</h2>
+            <p>Here are some of my projects:</p>
 
+            <!--buttons-->
+            <div class="links">
+            <a href="./SESI_1/HW_SESI_1/index.html" class="btn">Sesi 1</a>
+            <a href="./SESI_2/HW_SESI_2/index.html" class="btn">Sesi 2</a>
+            <a href="./SESI_3/HW_SESI_3/index.html" class="btn">Sesi 3</a>
+            <a href="./index.html" class="btn">Sesi 5</a>
+            <!-- 
+            <a href="./SESI_5/HW_SESI_5/index.html" class="btn">Sesi 5</a>
+            <a href="./SESI_6/HW_SESI_6/index.html" class="btn">Sesi 6</a>
+            -->
+        </div>
+        </section>
+    </main>
     <footer>
       <p>abam &copy; 2026</p>
     </footer>
-  </body>
+    
+</body>
 </html>
