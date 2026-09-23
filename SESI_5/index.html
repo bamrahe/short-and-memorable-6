@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title data-title="home">Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="sesi_5.html">Portfolio</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
+            <a href="sesi_5.html" data-i18n="nav.portfolio">Portfolio</a>
+            <a href="about.html" data-i18n="nav.about">About</a>
+            <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+            <div class="language-switch" role="group" aria-label="Choose language" data-i18n-aria-label="language.choose">
+                <button type="button" data-language="en" aria-pressed="true">🇬🇧 ENG</button>
+                <button type="button" data-language="id" aria-pressed="false">🇮🇩 ID</button>
+            </div>
             <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
                 <span class="theme-toggle__icon" aria-hidden="true">☾</span>
             </button>
@@ -21,21 +25,21 @@
     </header>
     <main>
         <section>
-            <h2>Welcome to my website!</h2>
-            <p>This is a simple website created for demonstration purposes.</p>
-            <p>I'm using <b>glassmorphism</b> style.</p>
-            <p>This style is characterized by a frosted glass effect, which gives the appearance of a semi-transparent background with a blurred effect. It creates a modern and elegant look for the website.</p>
-            <p>Feel free to explore the different sections of the website and learn more about me and my work. You can find my portfolio and information about me in the navigation menu above.</p>
-            <p>Thank you for visiting my website!</p>
-            <p>Enjoy your stay!</p>
+            <h2 data-i18n="home.welcome">Welcome to my website!</h2>
+            <p data-i18n="home.intro">This is a simple website created for demonstration purposes.</p>
+            <p data-i18n="home.glass">I'm using <b>glassmorphism</b> style.</p>
+            <p data-i18n="home.explain">This style is characterized by a frosted glass effect, which gives the appearance of a semi-transparent background with a blurred effect. It creates a modern and elegant look for the website.</p>
+            <p data-i18n="home.explore">Feel free to explore the different sections of the website and learn more about me and my work. You can find my portfolio and information about me in the navigation menu above.</p>
+            <p data-i18n="home.thanks">Thank you for visiting my website!</p>
+            <p data-i18n="home.enjoy">Enjoy your stay!</p>
 
             <div class="blur">
-                <p>Everything after I'm using glassmorphism style is just me pressing tab btw</p>
+                <p data-i18n="home.blur">Everything after I'm using glassmorphism style is just me pressing tab btw</p>
             </div>
         </section>
     </main>
     <footer>
-      <p>abam &copy; 2026</p>
+    <p data-i18n="footer">abam &copy; 2026</p>
     </footer>
         <script src="script.js"></script>
 </body>

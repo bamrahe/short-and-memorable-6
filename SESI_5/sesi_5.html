@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title data-title="portfolio">Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="about.html" data-i18n="nav.about">About</a>
+            <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+            <div class="language-switch" role="group" aria-label="Choose language" data-i18n-aria-label="language.choose">
+                <button type="button" data-language="en" aria-pressed="true">🇬🇧 ENG</button>
+                <button type="button" data-language="id" aria-pressed="false">🇮🇩 ID</button>
+            </div>
             <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
                 <span class="theme-toggle__icon" aria-hidden="true">☾</span>
             </button>
@@ -22,8 +26,8 @@
 
     <main>
         <section>
-            <h2>My Portfolio</h2>
-            <h3>Here are some of my projects:</h3>
+            <h2 data-i18n="portfolio.heading">My Portfolio</h2>
+            <h3 data-i18n="portfolio.subheading">Here are some of my projects:</h3>
 
             <!--buttons-->
             <div class="links">
@@ -35,7 +39,7 @@
         </section>
     </main>
     <footer>
-      <p>abam &copy; 2026</p>
+    <p data-i18n="footer">abam &copy; 2026</p>
     </footer>
         <script src="script.js"></script>
     

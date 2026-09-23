@@ -111,6 +111,46 @@ header nav a:focus-visible {
   transform: translateY(-2px);
 }
 
+.language-switch {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid var(--control-border);
+  border-radius: 999px;
+  background: var(--control-background);
+}
+
+.language-switch button {
+  padding: 0.55rem 0.7rem;
+  border: 0;
+  color: var(--ink);
+  background: transparent;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.language-switch button + button {
+  border-left: 1px solid var(--control-border);
+}
+
+.language-switch button[aria-pressed="true"] {
+  color: #fff;
+  background: var(--highlight);
+}
+
+.language-switch button:hover,
+.language-switch button:focus-visible {
+  outline: 0;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.language-switch button[aria-pressed="true"]:hover,
+.language-switch button[aria-pressed="true"]:focus-visible {
+  background: var(--highlight);
+}
+
 .theme-toggle {
   display: inline-flex;
   align-items: center;
