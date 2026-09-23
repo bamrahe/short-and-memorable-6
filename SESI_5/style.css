@@ -393,7 +393,6 @@ img {
   max-width: 100%;
   height: 360px;
   object-fit: contain;
-  mix-blend-mode: screen;
 }
 
 .gallery-art--video {
@@ -407,7 +406,6 @@ img {
   max-width: 100%;
   height: 300px;
   object-fit: contain;
-  mix-blend-mode: screen;
 }
 
 .watch-video {
