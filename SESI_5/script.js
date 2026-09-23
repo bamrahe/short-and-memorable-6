@@ -2,6 +2,7 @@ const themeToggle = document.querySelector('.theme-toggle');
 const savedTheme = localStorage.getItem('theme');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 const savedLanguage = localStorage.getItem('language') || 'en';
+let typingTimer;
 
 const translations = {
 	en: {
@@ -107,7 +108,37 @@ function setLanguage(language) {
 		dot.setAttribute('aria-label', label);
 	});
 
+	startTypingAnimation();
+
 	localStorage.setItem('language', language);
+}
+
+function startTypingAnimation() {
+	const heading = document.querySelector('.typing-heading');
+
+	if (!heading) {
+		return;
+	}
+
+	clearInterval(typingTimer);
+	const text = heading.textContent;
+	const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+	if (reducedMotion) {
+		heading.textContent = text;
+		return;
+	}
+
+	heading.textContent = '';
+	let characterIndex = 0;
+	typingTimer = setInterval(() => {
+		heading.textContent += text[characterIndex];
+		characterIndex += 1;
+
+		if (characterIndex === text.length) {
+			clearInterval(typingTimer);
+		}
+	}, 75);
 }
 
 setLanguage(savedLanguage);

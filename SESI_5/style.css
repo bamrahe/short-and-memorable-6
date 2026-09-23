@@ -182,6 +182,26 @@ h1 {
   text-align: center;
 }
 
+.typing-heading {
+  display: inline-block;
+  min-height: 1.5em;
+  border-right: 0.12em solid var(--highlight);
+  padding-right: 0.12em;
+  animation: typing-cursor 750ms steps(1) infinite;
+}
+
+@keyframes typing-cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typing-heading {
+    animation: none;
+  }
+}
+
 p {
   margin: 0;
   line-height: 1.5;
@@ -513,4 +533,14 @@ img {
   .gallery__slide {
     padding: 0.65rem;
   }
+}
+
+.sosmed a {
+    margin: 0 8px;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.sosmed img {
+    width: 60px;
 }
