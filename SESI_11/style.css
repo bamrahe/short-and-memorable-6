@@ -459,6 +459,7 @@ h1:hover{
   font-family: "Playfair Display", Georgia, serif;
   font-size: 66px;
   line-height: 1.05;
+  padding-bottom: 15px;
 }
 
 .weekday {
