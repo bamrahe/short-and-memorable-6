@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7eee3">
+    <meta
+      name="description"
+      content="You're invited to celebrate a birthday on November 5 at Timezone, Mall Bali Galeria."
+    >
+    <title>Birthday Celebration — November 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="invitation">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark mode</button>
+      <div class="balloon-layer" aria-hidden="true">
+        <span class="balloon balloon-left balloon-coral"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-left balloon-gold"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-left balloon-rose"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-right balloon-gold"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-right balloon-rose"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-right balloon-coral"><span class="balloon-string"></span></span>
+      </div>
+      <div class="confetti confetti-one" aria-hidden="true"></div>
+      <div class="confetti confetti-two" aria-hidden="true"></div>
+      <div class="confetti confetti-three" aria-hidden="true"></div>
+      <div class="confetti confetti-four" aria-hidden="true"></div>
+
+      <section class="card invitation-cover" aria-labelledby="cover-title">
+        <p class="eyebrow"><span aria-hidden="true">✦</span> <span class="typing-text">A little celebration awaits</span> <span aria-hidden="true">✦</span></p>
+        <div class="gift-stage">
+          <button
+            class="gift-toggle"
+            type="button"
+            data-gift-toggle
+            aria-expanded="false"
+            aria-label="Open the birthday present"
+          >
+            <span class="gift-box" aria-hidden="true">
+              <span class="gift-base"><span class="gift-ribbon"></span></span>
+              <span class="gift-lid"><span class="gift-bow"></span></span>
+            </span>
+            <span class="gift-hint" data-gift-hint>Tap to open</span>
+          </button>
+          <span class="gift-burst" data-gift-burst aria-hidden="true">
+            <span class="burst-piece burst-one"></span>
+            <span class="burst-piece burst-two"></span>
+            <span class="burst-piece burst-three"></span>
+            <span class="burst-piece burst-four"></span>
+            <span class="burst-piece burst-five"></span>
+            <span class="burst-piece burst-six"></span>
+            <span class="burst-piece burst-seven"></span>
+            <span class="burst-piece burst-eight"></span>
+            <span class="burst-piece burst-nine"></span>
+            <span class="burst-piece burst-ten"></span>
+          </span>
+        </div>
+        <h1 id="cover-title">A birthday<br><span>surprise</span></h1>
+        <p class="intro">You're invited to celebrate with me!</p>
+        <p class="countdown-label">The party starts in</p>
+        <div class="countdown" data-countdown aria-label="Countdown to the celebration" aria-live="off">
+          <div><span data-unit="days">--</span><small>days</small></div>
+          <div><span data-unit="hours">--</span><small>hours</small></div>
+          <div><span data-unit="minutes">--</span><small>mins</small></div>
+          <div><span data-unit="seconds">--</span><small>secs</small></div>
+        </div>
+        <button class="primary-button open-button" type="button" data-open-invitation>
+          Open your invitation <span aria-hidden="true">✦</span>
+        </button>
+        <p class="cover-date">NOVEMBER 5 <span aria-hidden="true">·</span> 5:00 PM WITA</p>
+      </section>
+
+      <section class="card invitation-details" aria-labelledby="invitation-title" tabindex="-1" hidden>
+        <p class="eyebrow"><span aria-hidden="true">✦</span> Save the date <span aria-hidden="true">✦</span></p>
+        <div class="cake" aria-hidden="true">🎂</div>
+        <h1 id="invitation-title">You're invited<br>to a birthday<br><span>celebration!</span></h1>
+        <p class="intro">Come celebrate, laugh, and make a lovely memory with me.</p>
+
+        <div class="details">
+          <div class="date">
+            <span class="month">NOV</span>
+            <span class="day">05</span>
+            <span class="weekday">THURSDAY · 2026</span>
+          </div>
+          <div class="divider" aria-hidden="true"></div>
+          <div class="event-info">
+            <p class="detail-label">WHEN</p>
+            <p class="detail-value">5:00 PM <span>WITA</span></p>
+            <p class="detail-label venue-label">WHERE</p>
+            <p class="detail-value venue">Timezone<br>Mall Bali Galeria</p>
+          </div>
+        </div>
+
+        <a
+          class="map-link"
+          href="https://maps.google.com/?q=Timezone+Mall+Bali+Galeria"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Find the venue <span aria-hidden="true">↗</span></a>
+        <p class="closing">It wouldn't be the same without you <span aria-hidden="true">♥</span></p>
+        <a class="primary-button rsvp-button" href="rsvp.html">RSVP <span aria-hidden="true">→</span></a>
+      </section>
+      <p class="footer">A day to celebrate, a night to remember</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

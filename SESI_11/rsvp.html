@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7eee3">
+    <meta name="description" content="RSVP for the birthday celebration on November 5 at Timezone, Mall Bali Galeria.">
+    <title>RSVP — Birthday Celebration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="invitation rsvp-screen">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark mode</button>
+      <div class="balloon-layer" aria-hidden="true">
+        <span class="balloon balloon-left balloon-coral"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-left balloon-gold"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-left balloon-rose"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-right balloon-gold"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-right balloon-rose"><span class="balloon-string"></span></span>
+        <span class="balloon balloon-right balloon-coral"><span class="balloon-string"></span></span>
+      </div>
+      <div class="confetti confetti-one" aria-hidden="true"></div>
+      <div class="confetti confetti-two" aria-hidden="true"></div>
+      <div class="confetti confetti-three" aria-hidden="true"></div>
+      <div class="confetti confetti-four" aria-hidden="true"></div>
+
+      <section class="card rsvp-card" aria-labelledby="rsvp-title">
+        <p class="eyebrow"><span aria-hidden="true">✦</span> November 5 · 5:00 PM WITA <span aria-hidden="true">✦</span></p>
+        <h1 id="rsvp-title">Will you<br><span>be there?</span></h1>
+        <p class="rsvp-intro">Let me know if you can make it to Timezone, Mall Bali Galeria.</p>
+
+        <form class="rsvp-form" data-rsvp-form>
+          <label for="guest-name">
+            Your name
+            <input id="guest-name" name="name" autocomplete="name" required>
+          </label>
+
+          <fieldset class="attendance-fieldset">
+            <legend class="attendance-legend">Can you make it?</legend>
+            <div class="attendance-options">
+              <label><input type="radio" name="attendance" value="Yes, I'll be there" required> Yes, gladly!</label>
+              <label><input type="radio" name="attendance" value="Sorry, I can't make it"> Sorry, can't</label>
+            </div>
+          </fieldset>
+
+          <label for="guest-count">
+            Number of guests
+            <select id="guest-count" name="guests">
+              <option value="1">Just me</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </label>
+
+          <label for="guest-note">
+            A note for me <span>(optional)</span>
+            <textarea id="guest-note" name="note" rows="3" placeholder="Can't wait to celebrate!"></textarea>
+          </label>
+
+          <fieldset class="rsvp-method">
+            <legend class="attendance-legend">Send your RSVP by</legend>
+            <div class="attendance-options">
+              <label><input type="radio" name="method" value="email" checked> Email </label>
+              <label><input type="radio" name="method" value="whatsapp"> WhatsApp </label>
+            </div>
+          </fieldset>
+
+          <button class="primary-button" type="submit">Continue to send RSVP <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="form-status" data-form-status role="status"></p>
+        <a class="back-link" href="index.html">← Back to the invitation</a>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
