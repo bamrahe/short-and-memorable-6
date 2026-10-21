@@ -415,6 +415,11 @@ h1 span {
   font-style: italic;
 }
 
+h1:hover{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 .intro {
   max-width: 310px;
   margin: 17px auto 28px;
