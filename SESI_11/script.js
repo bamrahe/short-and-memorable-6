@@ -106,6 +106,59 @@ if (openButton && invitationCover && invitationDetails) {
 const rsvpForm = document.querySelector("[data-rsvp-form]");
 const RSVP_EMAIL = "bamrahe@gmail.com";
 const RSVP_WHATSAPP = "6287762607099";
+const rsvpSurprise = document.querySelector("[data-rsvp-surprise]");
+const giftWheel = document.querySelector("[data-gift-wheel]");
+const spinWheelButton = document.querySelector("[data-spin-wheel]");
+const wheelResult = document.querySelector("[data-wheel-result]");
+const wheelProof = document.querySelector("[data-wheel-proof]");
+const wheelQr = document.querySelector("[data-wheel-qr]");
+const wheelQrError = document.querySelector("[data-wheel-qr-error]");
+const wheelDownload = document.querySelector("[data-wheel-download]");
+const wheelPrizes = ["Spa voucher", "Tumbler", "Tiso", "T-shirt"];
+let wheelRotation = 0;
+let selectedPrize;
+
+if (giftWheel && spinWheelButton && wheelResult) {
+  spinWheelButton.addEventListener("click", () => {
+    if (selectedPrize !== undefined) return;
+
+    selectedPrize = Math.floor(Math.random() * wheelPrizes.length);
+    const segmentCenter = -45 + selectedPrize * 90;
+    const currentAngle = wheelRotation % 360;
+    const alignment = ((-90 - segmentCenter - currentAngle) % 360 + 360) % 360;
+    wheelRotation += 5 * 360 + alignment;
+    spinWheelButton.disabled = true;
+    wheelResult.textContent = "Spinning...";
+    giftWheel.style.transform = `rotate(${wheelRotation}deg)`;
+  });
+
+  giftWheel.addEventListener("transitionend", (event) => {
+    if (event.propertyName !== "transform" || selectedPrize === undefined) return;
+
+    const prize = wheelPrizes[selectedPrize];
+    const prizeFile = prize.toLowerCase().replace(" ", "-");
+    wheelResult.textContent = `You won a ${prize}!`;
+    spinWheelButton.textContent = "Gift revealed";
+
+    if (wheelProof && wheelQr && wheelDownload) {
+      const qrFile = `gift-qr-${prizeFile}.png`;
+      wheelQr.src = qrFile;
+      wheelQr.alt = `QR code for your ${prize} gift claim`;
+      wheelDownload.href = qrFile;
+      wheelDownload.download = `gift-claim-${prizeFile}.png`;
+      wheelDownload.hidden = false;
+      wheelProof.hidden = false;
+    }
+  });
+
+  if (wheelQr && wheelQrError && wheelDownload) {
+    wheelQr.addEventListener("error", () => {
+      wheelQr.hidden = true;
+      wheelDownload.hidden = true;
+      wheelQrError.hidden = false;
+    });
+  }
+}
 
 if (rsvpForm) {
   rsvpForm.addEventListener("submit", (event) => {
@@ -132,6 +185,10 @@ if (rsvpForm) {
     const body = encodeURIComponent(message);
 
     const status = document.querySelector("[data-form-status]");
+    if (rsvpSurprise) {
+      rsvpSurprise.hidden = false;
+    }
+
     if (method === "whatsapp") {
       window.open(`https://wa.me/${RSVP_WHATSAPP}?text=${body}`, "_blank", "noopener,noreferrer");
       if (status) {

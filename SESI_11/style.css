@@ -724,6 +724,148 @@ h1:hover{
   line-height: 1.5;
 }
 
+.rsvp-surprise {
+  padding: 14px;
+  border: 1px solid #ead8b8;
+  border-radius: 6px;
+  background: #fff6e5;
+  text-align: center;
+  animation: surprise-pop 420ms ease-out both;
+}
+
+.rsvp-surprise[hidden] {
+  display: none;
+}
+
+.rsvp-surprise-title,
+.rsvp-surprise-message {
+  margin: 0;
+}
+
+.rsvp-surprise-title {
+  color: #875341;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.rsvp-surprise-message {
+  margin-top: 5px;
+  color: #796b69;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.wheel-stage {
+  position: relative;
+  width: min(100%, 250px);
+  margin: 17px auto 10px;
+}
+
+.gift-wheel {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  border: 5px solid #fffaf4;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgb(93 58 52 / 18%);
+  transform: rotate(0deg);
+  transition: transform 3.8s cubic-bezier(0.12, 0.72, 0.12, 1);
+}
+
+.wheel-label {
+  fill: #372d31;
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.wheel-center {
+  fill: #bd6665;
+  font-size: 13px;
+}
+
+.wheel-pointer {
+  position: absolute;
+  z-index: 1;
+  top: -4px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: 21px solid #bd6665;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  filter: drop-shadow(0 2px 1px rgb(55 45 49 / 20%));
+  transform: translateX(-50%);
+}
+
+.wheel-spin-button {
+  margin-top: 4px;
+}
+
+.wheel-spin-button:disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+
+.wheel-result {
+  min-height: 1.5em;
+  margin: 12px 0 0;
+  color: #875341;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.wheel-proof {
+  margin: 15px 0 0;
+  color: #796b69;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.wheel-proof[hidden] {
+  display: none;
+}
+
+.wheel-download {
+  margin-top: 10px;
+}
+
+.wheel-download[hidden] {
+  display: none;
+}
+
+.wheel-qr {
+  display: block;
+  width: min(200px, 100%);
+  height: auto;
+  padding: 24px;
+  margin: 0 auto 7px;
+  border: 1px solid #ead8b8;
+  border-radius: 6px;
+  background: #fff;
+  image-rendering: pixelated;
+}
+
+.wheel-qr-error {
+  color: #994f4d;
+  font-size: 12px;
+}
+
+@keyframes surprise-pop {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .back-link {
   display: inline-block;
   margin-top: 13px;
@@ -965,8 +1107,30 @@ h1:hover{
 :root[data-theme="dark"] .countdown-label,
 :root[data-theme="dark"] .countdown small,
 :root[data-theme="dark"] .rsvp-intro,
-:root[data-theme="dark"] .form-status {
+:root[data-theme="dark"] .form-status,
+:root[data-theme="dark"] .rsvp-surprise-message {
   color: #c2b0aa;
+}
+
+:root[data-theme="dark"] .rsvp-surprise {
+  border-color: #69545a;
+  background: #30282b;
+}
+
+:root[data-theme="dark"] .rsvp-surprise-title {
+  color: #f0afa3;
+}
+
+:root[data-theme="dark"] .wheel-result {
+  color: #f0afa3;
+}
+
+:root[data-theme="dark"] .wheel-proof {
+  color: #c2b0aa;
+}
+
+:root[data-theme="dark"] .gift-wheel {
+  border-color: #2e292d;
 }
 
 :root[data-theme="dark"] .details {
