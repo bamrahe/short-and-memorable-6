@@ -364,6 +364,10 @@ main {
     content: "−";
 }
 
+.lore-card .guide {
+    margin: 0 1.5rem 1.5rem;
+}
+
 .fnaf-lore {
     margin: 0;
     padding: 0 1.5rem 1.5rem;
