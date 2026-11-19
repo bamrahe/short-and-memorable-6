@@ -114,7 +114,7 @@ const wheelProof = document.querySelector("[data-wheel-proof]");
 const wheelQr = document.querySelector("[data-wheel-qr]");
 const wheelQrError = document.querySelector("[data-wheel-qr-error]");
 const wheelDownload = document.querySelector("[data-wheel-download]");
-const wheelPrizes = ["Spa voucher", "Tumbler", "Tiso", "T-shirt"];
+const wheelPrizes = ["Spa voucher", "Tiso", "Tumbler", "T-shirt"];
 let wheelRotation = 0;
 let selectedPrize;
 
