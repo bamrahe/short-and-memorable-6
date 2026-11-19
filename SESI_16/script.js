@@ -36,7 +36,7 @@ const translations = {
         "footer.follow": "Find me online",
         "social.roblox": "Roblox profile",
         "social.youtube": "YouTube channel",
-        "home.intro": "Welcome to my guide! Here's my Fisch guide, but first, here's some FNAF lore.",
+        "home.intro": "Welcome to my guide! Here's my Fisch guide.",
         "home.description": "Fisch is a Roblox experience created by Canadian video game developer WoozyNate. It was officially released on October 5, 2024. It's an open-world adventure game where the main goal is to catch fish, earn money, complete your Bestiary, and finish quests.",
         "about.title": "About Me",
         "about.intro": "Hi, I'm Abam.",
