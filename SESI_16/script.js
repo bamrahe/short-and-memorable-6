@@ -87,7 +87,7 @@ const translations = {
         "footer.follow": "Temukan saya online",
         "social.roblox": "Profil Roblox",
         "social.youtube": "Kanal YouTube",
-        "home.intro": "Hai semuanya, selamat datang di panduan saya! Saya membuat logo Roblox dan YouTube terlihat seperti sedang diedit. Ini panduan Fisch saya, tetapi sebelumnya, mari bahas sedikit lore FNAF.",
+        "home.intro": "Hai semuanya, selamat datang di panduan saya! Berikut panduan Fisch saya.",
         "home.description": "Fisch adalah pengalaman Roblox yang dibuat oleh pengembang gim asal Kanada, WoozyNate. Gim ini resmi dirilis pada 5 Oktober 2024. Fisch adalah gim petualangan dunia terbuka yang tujuan utamanya adalah menangkap ikan, mendapatkan uang, melengkapi Bestiary, dan menyelesaikan misi.",
         "about.title": "Tentang Saya",
         "about.intro": "Hai, saya Abam.",
